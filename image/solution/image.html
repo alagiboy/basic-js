@@ -1,0 +1,41 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Image Properties</title>
+  <link rel="stylesheet" type="text/css" href="image-styles.css">
+  <script type="text/javascript">
+    
+    //function to change the image properties
+    function scaleImage(newwidth, newheight, newborder){
+      var img = document.getElementById('theImage');
+      var newwidth = w.value;
+      var newheight = h.value;
+      var newborder = b.value;
+
+      document.getElementById('theImage').style.width = newwidth;
+  	  document.getElementById('theImage').style.height = newheight;
+      document.getElementById('theImage').style.border = newborder;
+    }
+
+
+  </script>
+</head>
+<body>
+
+  <h2>Change the Image Properties:</h2>
+
+  <img src="images/boat.jpg" alt="Boat" width="500" height="375" border="1" id="theImage">
+  <p>
+    Width : <input type="text" name="w" id="w" onfocus="document.getElementById('w').style.backgroundColor='green';"
+    onblur="document.getElementById('w').style.backgroundColor='white';" />
+  <br />
+    Height: <input type="text" name="h" id="h" onfocus="document.getElementById('h').style.backgroundColor='red';"
+    onblur="document.getElementById('h').style.backgroundColor='white';"/>
+  <br />
+    Border: <input type="text" name="b" id="b" onfocus="document.getElementById('b').style.backgroundColor='blue';"
+    onblur="document.getElementById('b').style.backgroundColor='white';"/>
+  <br />
+    <input class="btn" type="button" value="Modify Image" onClick="scaleImage(w, h, b)" />
+  </p>
+</body>
+</html>

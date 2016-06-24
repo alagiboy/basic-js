@@ -1,0 +1,100 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<title>Abdou's Photo Gallery</title>
+<link rel="stylesheet" type="text/css" href="styles.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$(".smallimg").fadeTo(0,0.5);
+
+	$(".smallimg").bind("mouseover", function(){
+		$(this).fadeTo(0,1.0);
+	});
+
+	$(".smallimg").bind("mouseout", function(){
+		$(this).fadeTo(0,0.5);
+	});
+
+	$("#thumb1").bind("click", function(){
+		$("#mainphoto").hide()
+		$("#caption").html("Fly By Pluto");
+		$("#mainphoto").attr("src","images/gal-1.png").fadeIn();
+		$(".smallimg").attr("border","0");
+		$("#thumb1").attr("border","2");
+	});
+
+	$("#thumb2").bind("click", function(){
+		$("#mainphoto").hide()
+		$("#caption").html("Milwaykee Bucks");
+		$("#mainphoto").attr("src","images/gal-2.png").fadeIn();
+		$(".smallimg").attr("border","0");
+		$("#thumb2").attr("border","2");
+	});
+
+	$("#thumb3").bind("click", function(){
+		$("#mainphoto").hide()
+		$("#caption").html("Abdou having coffee");
+		$("#mainphoto").attr("src","images/gal-3.png").fadeIn();
+		$(".smallimg").attr("border","0");
+		$("#thumb3").attr("border","2");
+	});
+
+	$("#thumb4").bind("click", function(){
+		$("#mainphoto").hide()
+		$("#caption").html("Masison Union");
+		$("#mainphoto").attr("src","images/gal-4.png").fadeIn();
+		$(".smallimg").attr("border","0");
+		$("#thumb4").attr("border","2");
+	});
+
+	$("#thumb5").bind("click", function(){
+		$("#mainphoto").hide()
+		$("#caption").html("Guys at BBQ");
+		$("#mainphoto").attr("src","images/gal-5.png").fadeIn();
+		$(".smallimg").attr("border","0");
+		$("#thumb5").attr("border","2");
+	});
+
+	$("#thumb6").bind("click", function(){
+		$("#mainphoto").hide()
+		$("#caption").html("Kodak Moment");
+		$("#mainphoto").attr("src","images/gal-6.png").fadeIn();
+		$(".smallimg").attr("border","0");
+		$("#thumb6").attr("border","2");
+	});
+
+});
+
+</script>
+
+</head>
+<body><div id="all">
+	<div id="headline"> Abdou's Photo Gallery </div>
+
+    <div id="thumbnails"><ul>
+        <li>	<img class="smallimg" id="thumb1" src="images/gal-1.png" alt="Fly By Pluto" border="2"></li>
+
+        	<li><img class="smallimg" id="thumb2" src="images/gal-2.png" alt="Milwaykee Bucks" border="0"></li>
+
+        	<li><img class="smallimg" id="thumb3" src="images/gal-3.png" alt="Abdou having coffee" border="0"></li>
+
+        	<li><img class="smallimg" id="thumb4" src="images/gal-4.png" alt="Masison Union" border="0"></li>
+
+        	<li><img class="smallimg" id="thumb5" src="images/gal-5.png" alt="Guys at BBQ" border="0"></li>
+
+        	<li><img class="smallimg" id="thumb6" src="images/gal-6.png" alt="Kodak Moment" border="0"> </li>
+            </ul>
+    </div>
+
+    <div id="largearea">
+    	<img id="mainphoto" src="images/gal-1.png" alt="Fly By Pluto">
+    </div>
+
+    <div id="caption">
+    	Fly By Pluto
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+body {
+  width: 460px;
+  margin: 20px auto;
+  font-size: 14px;
+  font-family: Helvetica;
+}
+form {
+  border: 1px solid #000;
+  padding: 10px 30px;
+}
+label {
+  padding-right: 10px;
+}
+
+input[type="text"], input[type="email"]{
+  border-radius: 0;
+  font-size: 14px;
+  border: solid 1px #CCCCCC;
+}
+input[type="text"]:focus,
+input[type="email"]:focus{
+  border: solid 3px #ff0000;
+}
+form p{
+  margin: 5px;
+  padding: 5px;
+}
+fieldset {
+  border: none;
+}
+.btn {
+    padding: 5px 15px;
+    border: 0 none;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: #ff0000;
+    color: #ffffff;
+}

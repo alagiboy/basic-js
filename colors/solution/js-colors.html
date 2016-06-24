@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+  <title>Javascript Basics</title>
+  <link rel="stylesheet" type="text/css" href="bg-colors.css">
+
+  <script language="javascript">
+    //Input Alert
+    function displayName(){
+      alert("Hello " + fname.value + ", Thank you for visiting.");
+    }
+  </script>
+</head>
+<body>
+  <div id="background">
+    <form name="colors" method="post" action="">
+      <div class="text-controls">
+        <h3>Text Colors</h3>
+        <p>
+          <input type="radio" name="choice" id="blue" value="radio" onClick="document.getElementById('background').style.color='blue';">
+          <label for="blue">Blue</label>
+        </p>
+        <p>
+          <input type="radio" id="black" name="choice" value="radio" onClick="document.getElementById('background').style.color='black';">
+          <label for="black">Black</label>
+        </p>
+        <p>
+          <input type="radio" id="green" name="choice" value="radio" onClick="document.getElementById('background').style.color='green';">
+          <label for="green">Green</label>
+        </p>
+        <p>
+          <input type="radio" id="red" name="choice" value="radio" onClick="document.getElementById('background').style.color='red';">
+          <label for="red">Red</label>
+        </p>
+        <p>
+          <input type="radio" id="violet" name="choice" value="radio" onClick="document.getElementById('background').style.color='violet';">
+          <label for="violet">Violet</label>
+        </p>
+
+      </div>
+      <div class="bg-controls">
+        <h3>Background Colors</h3>
+        <p>
+          <input type="radio" name="choice" id="gray" value="radio" onClick="document.getElementById('background').style.backgroundColor='gray';">
+          <label for="gray">Gray</label>
+        </p>
+        <p>
+          <input type="radio" id="black" name="choice" value="radio" onClick="document.getElementById('background').style.backgroundColor='black';">
+          <label for="black">Black</label>
+        </p>
+        <p>
+          <input type="radio" id="white" name="choice" value="radio" onClick="document.getElementById('background').style.backgroundColor='white';">
+          <label for="white">White</label>
+        </p>
+        <p>
+          <input type="radio" id="orange" name="choice" value="radio" onClick="document.getElementById('background').style.backgroundColor='orange';">
+          <label for="orange">Orange</label>
+        </p>
+        <p>
+          <input type="radio" id="teal" name="choice" value="radio" onClick="document.getElementById('background').style.backgroundColor='teal';">
+          <label for="teal">Teal</label>
+        </p>
+      </div>
+      <div>
+        <p>
+          <label for="fname"> Name: </label>
+          <input type="text" name="fname" id="fname" >
+          <input class="btn" type="submit" value="Enter" onclick="displayName();">
+        </p>
+      </div>
+    </form>
+  </div>
+  <div>
+    <h2>
+			Wisconsin State Capitol at Night.
+		</h2>
+		<img class="capitol" src="images/capitol.jpg" alt"Wisconsin State Capitol" title="Wisconsin State Capitol" />
+  </div>
+</body>
+</html>

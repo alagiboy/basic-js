@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<title>Form Validation</title>
+  <link rel="stylesheet" type="text/css" href="validate.css">
+  <script type="text/javascript" src="validate.js"></script>
+</head>
+<body>
+
+<form name="newForm" onsubmit="return validateForm()" method="post">
+    <p>
+      <label for="email">Email :</label>
+      <input type="email" name="email" id="email" size="20">
+    </p>
+    <p>
+      <label for="lname"> Last Name :</label>
+      <input type="text" name="lname" id="lname" size="20">
+    </p>
+    <p>
+      <label for="age">Age :</label>
+      <input type="text" name="age" id="age" size="3">
+    </p>
+    <p>
+      <input class="btn" type="submit" value="Check Value">
+    </p>
+  </form>
+
+  <form name="updatesForm" onsubmit="return emailUpdates()" method="post">
+    <p>
+      <label for="email2">Updates Email :</label>
+      <input type="email" name="email2" id="email2" size="20">
+    </p>
+    <p>
+      <input class="btn" type="submit" value="Receive Updates">
+    </p>
+  </form>
+
+</body>
+
+</html>
