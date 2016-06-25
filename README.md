@@ -1,6 +1,6 @@
 ## Basic Javascript
 
-* I created this repo to share some basic javascript projects/assessments from a course am taking at UWM.
+* I created this repo to share some basic javascript projects/assessments from a course I took at UWM.
 
 * Feel free to usy any part or all of the code shared here.
 
